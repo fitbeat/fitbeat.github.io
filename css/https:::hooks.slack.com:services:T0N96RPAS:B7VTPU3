@@ -1,0 +1,45 @@
+https://hooks.slack.com/services/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
+
+{ 
+	"coord":{
+			"lon":139,
+			"lat":35
+		},
+	"weather":[
+			{
+				"id":803,
+				"main":"Clouds",
+				"description":"broken clouds",
+				"icon":"https://cdn.glitch.com/6e8889e5-7a72-48f0-a061-863548450de5%2F04n.png?1499366020983"
+			}
+		],
+	"base":"stations",
+	"main":{
+			"temp":21,
+			"pressure":1012,
+			"humidity":60,
+			"temp_min":21,
+			"temp_max":21
+		},
+	"visibility":10000,
+	"wind":{
+			"speed":6.7,
+			"deg":230,
+			"gust":11.8
+		},
+	"clouds":{
+			"all":75
+		},
+	"dt":1509750000,
+	"sys":{
+			"type":1,
+			"id":7616,
+			"message":0.1711,
+			"country":"JP",
+			"sunrise":1509743249,
+			"sunset":1509781628
+		},
+	"id":1851632,
+	"name":"Shuzenji",
+	"cod":200
+}
