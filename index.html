@@ -8,8 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>be, in the world yoga</title>
+    <title>Prana, the Oxygen for Life</title>
     
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
     <!-- Favicon -->
     <link rel="icon" 
       type="image/png" 
@@ -31,14 +32,14 @@
     <link href="css/custom.css" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109291615-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109291615-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'UA-109291615-1');
-    </script>
+    </script> -->
 
   </head>
 
@@ -47,7 +48,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="navbar-logo" src="img/logos/logo.png"> in the world yoga</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="navbar-logo" src="img/logos/logo.png" style="border-radius: 45%;"> Oxygen for life</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -80,12 +81,32 @@
     <!-- Header -->
     <header class="masthead">
       <div class="container">
-        <div class="intro-text">
+        <!-- <div class="intro-text">
           <div class="intro-lead-in">Welcome To Our Community!</div>
           <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Let's Talk</a>
-        </div>
+        </div> -->
       </div>
+      <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+            <div class="slides"></div>
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+        </div>
+
+        <div id="links" style="display:none">
+          <a href="images/yoga/mainslider1.png" title="Banana">
+              <img src="images/yoga/mainslider1.png" alt="Banana">
+          </a>
+          <a href="images/yoga/mainslider2.png" title="Apple">
+              <img src="images/yoga/mainslider2.png" alt="Apple">
+          </a>
+          <a href="images/yoga/mainslider3.png" title="Orange">
+             
+          </a>
+        </div>
     </header>
 
     <!-- Services -->
@@ -133,7 +154,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Where we are</h2>
-            <h3 class="section-subheading text-muted">Where you can find Christina of Be, in the world yoga.</h3>
+            <h3 class="section-subheading text-muted">Where you can find your perfect body and happiness through yoga.</h3>
           </div>
         </div>
         <div class="row center-services">
@@ -144,7 +165,7 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/ymca.png" alt="">
+              <img class="img-fluid" src="img/portfolio/training.png" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>Yoga Teaching</h4>
@@ -763,7 +784,26 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+    <script src="js/blueimp-gallery.min.js"></script>
+    <script>
+      blueimp.Gallery(
+          document.getElementById('links').getElementsByTagName('a'),
+          {
+              container: '#blueimp-gallery-carousel',
+              carousel: true
+          }
+      );
 
+      // document.getElementById('links').onclick = function (event) {
+      //     event = event || window.event;
+      //     var target = event.target || event.srcElement,
+      //         link = target.src ? target.parentNode : target,
+      //         options = {index: link, event: event},
+      //         links = this.getElementsByTagName('a');
+      //     blueimp.Gallery(links, options);
+      // };
+
+      </script>
   </body>
 
 </html>
