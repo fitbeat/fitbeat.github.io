@@ -23,10 +23,10 @@ body {
 }*/
 .form-container {
 	width: 600px;
-	/*margin-left: auto;
+	margin-left: auto;
 	margin-right: auto;
-	margin-top:90px;
-	margin-bottom: 30px;*/
+	margin-top:10px;
+	margin-bottom: 20px;
 	padding: 30px;
 	background-color: #fff;
 	position: relative;
